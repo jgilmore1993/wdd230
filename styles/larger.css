@@ -1,0 +1,62 @@
+/* CSS for larger views */
+@media (min-width: 768px) {
+    /* Navigation links */
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style-type: none;
+    }
+    
+    /* Main element */
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    
+    /* Main column cards using CSS Grid */
+    main .card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    
+    /* Main sections */
+    main section {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* CSS for mobile view */
+  @media (max-width: 767px) {
+    /* Navigation links */
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    /* Main element */
+    main {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
+    
+    /* Main column cards using CSS Grid */
+    main .card-container {
+      display: block;
+    }
+    
+    /* Main sections */
+    main section {
+      margin-bottom: 10px;
+    }
+    
+    /* Style type of course links list */
+    main ul {
+      list-style-type: none;
+    }
+  }
