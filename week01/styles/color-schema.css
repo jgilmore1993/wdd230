@@ -19,7 +19,7 @@ header{
     display:flex;
     width:500px;
     margin:auto;
-    background-color: royalblue;;
+    background-color: indigo;;
     padding: 2rem;
     align-items: center;
     gap: 2rem;
@@ -59,11 +59,11 @@ nav {
 nav ul li {
     padding: 1rem;
     text-align: center;
-    background: #bebebe;
+    background: #454a52;
 }
 
 nav ul li a {
-    color: teal;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
