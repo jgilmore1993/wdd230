@@ -13,3 +13,5 @@ const lastModified = new Date(document.lastModified);
 // Set the last modified date in the second paragraph
 const lastModifiedParagraph = document.getElementById('lastModified');
 lastModifiedParagraph.textContent = 'Last modified: ' + lastModified.toLocaleString();
+
+document.querySelector("p").textContent = document.lastModified;
