@@ -1,8 +1,7 @@
-@media
-body{
+/* body{ */
     /* width: 400px; */
     
-}
+/* }  */
 header, main, nav, footer{
     margin:auto;
     width: 500px;
@@ -60,11 +59,11 @@ nav {
 nav ul li {
     padding: 1rem;
     text-align: center;
-    background: #bebebe;
+    background: rgb(69, 69, 69);
 }
 
 nav ul li a {
-    color: teal;
+    color: rgb(0, 244, 255);
     text-decoration: none;
     font-weight: 600;
 }
