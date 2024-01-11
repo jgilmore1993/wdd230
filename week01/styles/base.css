@@ -13,7 +13,7 @@ header, main, nav, footer{
     font-family: sans-serif;
 }
 :root {
-    --primary-color: #000000;
+    --primary-color: #444444;
 }
 header{
     display:flex;
