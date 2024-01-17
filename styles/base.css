@@ -2,6 +2,8 @@
     /* width: 400px; */
     
 /* }  */
+html{width: 100%;}
+body{width: 100%;}
 header, main, nav, footer{
     margin:auto;
     width: 500px;
@@ -52,13 +54,14 @@ main > h2{
 .card h3{
     text-align:center;
 }
-
 nav {
     width: 100%;
 }
-
+nav ul {width: 500px; margin: 0 auto;}
 nav ul li {
     padding: 1rem;
+
+    width: 100%;
     text-align: center;
     background: rgb(69, 69, 69);
 }
