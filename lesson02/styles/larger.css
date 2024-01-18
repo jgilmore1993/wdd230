@@ -1,0 +1,7 @@
+/* CSS for larger views */
+@media (min-width: 1000px) 
+{
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

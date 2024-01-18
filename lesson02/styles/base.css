@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,400;1,900&family=Space+Mono&display=swap');
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    border: 1px solid black;
+    width: 90%;
+}
+
+img {
+    width: 100%;
+}
