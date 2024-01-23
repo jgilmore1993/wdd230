@@ -28,7 +28,10 @@
       margin-bottom: 20px;
     }
   }
-  
+  body {
+    align-items: center;
+	  justify-content: center;
+  }
   /* Larger Views ******************************/
 @media (min-width: 640px) {
 	nav ul {
