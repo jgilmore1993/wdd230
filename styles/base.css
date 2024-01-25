@@ -151,3 +151,17 @@ body {
         left: 0;
     }
 }
+/* Base styles for larger screens (desktops/laptops) */
+.map-container {
+    width: 80%; /* Adjust based on your layout */
+    margin: 0 auto; /* This will center the map if there is a specified width */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) { /* Adjust this max-width to suit your mobile breakpoint */
+    .map-container {
+      width: 95%; /* Make the map container wider on smaller screens */
+      margin: 0 auto; /* Keep the map centered */
+    }
+  }
+  

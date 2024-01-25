@@ -32,6 +32,29 @@
     align-items: center;
 	  justify-content: center;
   }
+  .map-container {
+    width: 60%; /* Adjust the width as needed */
+    margin: 0 auto; /* This will center the map in the available horizontal space */
+    display: block; /* or display: flex; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+  .parent-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers children */
+    align-items: center; /* Vertically centers children */
+    height: 400px; /* Or whatever your desired height is */
+  }
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .parent-container {
+    display: grid;
+    place-items: center;
+  }
+  
   /* Larger Views ******************************/
 @media (min-width: 640px) {
 	nav ul {
