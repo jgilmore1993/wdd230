@@ -171,11 +171,26 @@ body {
   }
   footer {
     font-family: 'Courier New', monospace;
-    background-color: #00dcdc;
+    background-color: royalblue;
     text-align: center;
   }
 
   #lastModified{
-    color: black;
+    color: white;
     font-size: 75%;
   }
+  footer p {
+    color: white;
+}
+
+.navbar .hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 650px) {
+    .navbar .nav-toggle {
+        display: none;
+    }
+}

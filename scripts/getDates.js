@@ -16,12 +16,12 @@ lastModifiedParagraph.textContent = 'Last modified: ' + lastModified.toLocaleStr
 
 document.querySelector("p").textContent = document.lastModified;
 
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+const hamburger = document.querySelector(".navigation");
+const navMenu = document.querySelector("#menu");
 
 hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("show");
+    navMenu.classList.toggle("show");
 })
 
 document.querySelectorAll(".nav-link").forEach(n => n.
