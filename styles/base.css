@@ -48,20 +48,6 @@ main > h2{
 .card h3{
     text-align:center;
 }
-nav {
-    max-width: 500px;
-    padding: 1rem;
-    text-align: center;
-    background: rgb(69, 69, 69);
-}
-nav ul li a {
-    color: rgb(0, 244, 255);
-    text-decoration: none;
-    font-weight: 600;
-}
-nav li{
-    display: none;
-}
 #menu {
 	display: block;
 	font-size: 2rem;
@@ -71,16 +57,32 @@ nav li{
 	background-color: #eee;
 	color: #000;
 }
-
+ 
 #menu::before {
 	content: "☰";
 }
-
+nav {
+    max-width: 500px;
+    padding: 1rem;
+    text-align: center;
+    background: rgb(69, 69, 69);
+}
+.navgation a {
+	display: block;
+    color: rgb(0, 244, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav li{
+    display: none;
+}
+ 
+.show li {
+	display: block;
+}
+ 
 #menu.show::before {
 	content: "❎";
-}
-.show a {
-	display: block;
 }
 body {
     align-items: center;
@@ -97,7 +99,7 @@ body {
     background-color: royalblue;
     text-align: center;
   }
-
+ 
   #lastModified{
     color: white;
     font-size: 75%;
