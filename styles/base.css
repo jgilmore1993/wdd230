@@ -164,4 +164,18 @@ body {
       margin: 0 auto; /* Keep the map centered */
     }
   }
-  
+  iframe{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    font-family: 'Courier New', monospace;
+    background-color: #00dcdc;
+    text-align: center;
+  }
+
+  #lastModified{
+    color: black;
+    font-size: 75%;
+  }
