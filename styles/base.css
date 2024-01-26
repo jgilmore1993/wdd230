@@ -55,115 +55,44 @@ main > h2{
     text-align:center;
 }
 nav {
-    width: 100%;
-}
-nav ul {width: 500px; margin: 0 auto;}
-nav ul li {
+    max-width: 500px;
     padding: 1rem;
-
-    width: 100%;
     text-align: center;
     background: rgb(69, 69, 69);
 }
-
 nav ul li a {
     color: rgb(0, 244, 255);
     text-decoration: none;
     font-weight: 600;
 }
+nav li{
+    display: none;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.show::before {
+	content: "❎";
+}
+.show a {
+	display: block;
+}
 body {
     align-items: center;
 	justify-content: center;
   }
-
-.navbar{
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-}
-
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-branding{
-    font-size: 2rem;
-}
-
-.nav-link{
-    transition: 0.7s ease;
-}
-
-.nav-link:hover{
-    color: #696969;
-}
-
-.hamburger{
-    display: none;
-    cursor: pointer;
-}
-
-.bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #4b0082;
-}
-
-@media(max-width:768px){
-    .hamburger{
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #800000;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-
-    .nav-item{
-        margin: 16px 0;
-    }
-
-    .nav-menu.active{
-        left: 0;
-    }
-}
 /* Base styles for larger screens (desktops/laptops) */
-.map-container {
-    width: 80%; /* Adjust based on your layout */
-    margin: 0 auto; /* This will center the map if there is a specified width */
-  }
-  
-  /* Media query for mobile devices */
-  @media (max-width: 768px) { /* Adjust this max-width to suit your mobile breakpoint */
-    .map-container {
-      width: 95%; /* Make the map container wider on smaller screens */
-      margin: 0 auto; /* Keep the map centered */
-    }
-  }
   iframe{
     object-fit: cover;
     width: 100%;
@@ -181,16 +110,4 @@ body {
   }
   footer p {
     color: white;
-}
-
-.navbar .hamburger {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-@media screen and (max-width: 650px) {
-    .navbar .nav-toggle {
-        display: none;
-    }
 }
