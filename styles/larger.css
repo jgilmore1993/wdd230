@@ -7,10 +7,11 @@
       list-style-type: none;
     }
     nav ul li {
+      display: block;
       flex: 1 1 100%;
     }
     nav ul {flex-direction: row;}
-    .hamburger{
+    #menu{
       display: none;
       cursor: pointer;
   }

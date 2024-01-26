@@ -63,13 +63,13 @@ nav li{
     display: none;
 }
 #menu {
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
 	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
 }
 
 #menu::before {
