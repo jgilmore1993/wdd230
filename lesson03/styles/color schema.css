@@ -19,7 +19,7 @@ header{
     display:flex;
     width:500px;
     margin:auto;
-    background-color: indigo;;
+    background-color: maroon;;
     padding: 2rem;
     align-items: center;
     gap: 2rem;
@@ -59,11 +59,11 @@ nav {
 nav ul li {
     padding: 1rem;
     text-align: center;
-    background: rgb(69, 69, 69);
+    background: rgb(0, 244, 255);
 }
 
 nav ul li a {
-    color: rgb(0, 244, 255);
+    color: rgb(69, 69, 69);
     text-decoration: none;
     font-weight: 600;
 }
