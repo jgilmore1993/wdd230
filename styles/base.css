@@ -76,7 +76,11 @@ nav {
 nav li{
     display: none;
 }
- 
+
+.show{
+    display: block;
+}
+
 .show li {
 	display: block;
 }

@@ -16,10 +16,11 @@ lastModifiedParagraph.textContent = 'Last modified: ' + lastModified.toLocaleStr
 
 document.querySelector("p").textContent = document.lastModified;
 
-const hamburger = document.querySelector(".navigation");
-const navMenu = document.querySelector("#menu");
+const hamburger = document.querySelector("#menu");
+const navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
+    console.log("Toggle")
     hamburger.classList.toggle("show");
     navMenu.classList.toggle("show");
 })
