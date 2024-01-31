@@ -1,3 +1,90 @@
+header, main, nav, footer{
+  margin:auto;
+  width: 500px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/*:root {
+  --primary-color: #444444;
+} */
+header{
+  display:flex;
+  width:500px;
+  margin:auto;
+  background-color: royalblue;;
+  color: rgb(255, 255, 255);
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+header img{
+  width: 275px;
+  margin: 10px;
+}
+li{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  text-align:center;
+  padding-left:0;
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main > h2{
+  text-align:center;
+}
+.card {
+  border: 1px solid black;
+}
+.card h3{
+  text-align:center;
+}
+#menu {
+display: block;
+font-size: 2rem;
+font-weight:700;
+text-decoration: none;
+padding: .5rem .75rem;
+background-color: #eee;
+color: #000;
+}
+
+#menu::before {
+content: "☰";
+}
+nav {
+  max-width: 500px;
+  padding: 1rem;
+  text-align: center;
+  background: rgb(69, 69, 69);
+}
+.navgation a {
+display: block;
+  color: rgb(0, 244, 255);
+  text-decoration: none;
+  font-weight: 600;
+}
+nav li{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.show li {
+display: block;
+}
+
 #menu.show::before {
 	content: "❎";
 }
@@ -5,3 +92,26 @@ body {
     align-items: center;
 	justify-content: center;
   }
+  body {
+    align-items: center;
+	justify-content: center;
+  }
+/* Base styles for larger screens (desktops/laptops) */
+  iframe{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  footer {
+    font-family: 'Courier New', monospace;
+    background-color: royalblue;
+    text-align: center;
+  }
+ 
+  #lastModified{
+    color: white;
+    font-size: 75%;
+  }
+  footer p {
+    color: white;
+}

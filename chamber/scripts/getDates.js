@@ -14,7 +14,7 @@ const lastModified = new Date(document.lastModified);
 const lastModifiedParagraph = document.getElementById('lastModified');
 lastModifiedParagraph.textContent = 'Last modified: ' + lastModified.toLocaleString();
 
-document.querySelector("p").textContent = document.lastModified;
+document.querySelector("#lastModified").textContent = document.lastModified;
 
 const hamburger = document.querySelector("#menu");
 const navMenu = document.querySelector(".nav-menu");
