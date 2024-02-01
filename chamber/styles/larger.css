@@ -12,7 +12,7 @@
     }
     nav ul {flex-direction: row;}
     #menu{
-      display: none;
+      display: flex;
       cursor: pointer;
   }
     /* Main element */
