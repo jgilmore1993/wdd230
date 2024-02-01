@@ -1,5 +1,5 @@
 /* CSS for larger views */
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     /* Navigation links */
     nav ul {
       display: flex;
@@ -20,7 +20,7 @@
       max-width: 960px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
       gap: 20px;
     }
     h2 {grid-column: 1/3;}

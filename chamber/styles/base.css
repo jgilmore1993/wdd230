@@ -1,6 +1,5 @@
 header, main, nav, footer{
   margin:auto;
-  width: 500px;
 }
 * {
   box-sizing: border-box;
@@ -12,8 +11,8 @@ header, main, nav, footer{
   --primary-color: #444444;
 } */
 header{
-  display:flex;
-  width:700px;
+  display: grid;
+
   margin:auto;
   background-color: royalblue;;
   color: rgb(255, 255, 255);
@@ -22,7 +21,7 @@ header{
   gap: 2rem;
 }
 header img{
-  width: 275px;
+  width: 100%;
   margin: 10px;
 }
 li{
@@ -41,6 +40,10 @@ ul{
 }
 main > h2{
   text-align:center;
+}
+main {
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 .card {
   border: 1px solid black;
@@ -62,10 +65,15 @@ color: #000;
 content: "☰";
 }
 nav {
-  max-width: 500px;
   padding: 1rem;
   text-align: center;
   background: rgb(69, 69, 69);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+nav a {
+  color: white;
 }
 .navgation a {
 display: block;
@@ -106,7 +114,7 @@ body {
     font-family: 'Courier New', monospace;
     background-color: royalblue;
     text-align: center;
-    width:700px;
+    font-size: 20px;
   }
  
   #lastModified{
@@ -115,4 +123,8 @@ body {
   }
   footer p {
     color: white;
+}
+div {
+  border: #000 solid 1px;
+  padding: 10px;
 }
