@@ -13,7 +13,7 @@ header, main, nav, footer{
 } */
 header{
   display:flex;
-  width:500px;
+  width:700px;
   margin:auto;
   background-color: royalblue;;
   color: rgb(255, 255, 255);
@@ -106,6 +106,7 @@ body {
     font-family: 'Courier New', monospace;
     background-color: royalblue;
     text-align: center;
+    width:700px;
   }
  
   #lastModified{
