@@ -12,9 +12,10 @@
     }
     nav ul {flex-direction: row;}
     #menu{
-      display: flex;
+      display: none;
       cursor: pointer;
   }
+    nav {flex-direction: row;}
     /* Main element */
     main {
       max-width: 960px;
