@@ -24,3 +24,5 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("show");
     navMenu.classList.toggle("show");
 })
+hamburger.classList.toggle("show");
+navMenu.classList.toggle("show");

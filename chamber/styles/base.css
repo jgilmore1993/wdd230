@@ -138,6 +138,7 @@ div {
   display: inline-block;
   width: 60px;
   height: 34px;
+  margin-left: 95%;
 }
 
 /* Hide default HTML checkbox */
