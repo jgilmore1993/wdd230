@@ -42,7 +42,7 @@
     
   </header>
 <main>
-    <div>
+    <div class="bg-white dark:bg-black">
       <h2>Current Events</h2>
       <p>This week, a Martial Arts gym offering to teach Jeet Kune Do and Filipino Martial Arts was opened.</p>
     </div>
@@ -61,7 +61,12 @@
     <div class="weather-card">
         <h2 class="weather-location">Idaho Falls, Idaho</h2>
         <p>Tempurate is 45 degrees outside.</p>
-    </div>      
+    </div>
+    <!-- Rectangular switch -->
+<label class="switch">
+  <input id="darkmode" type="checkbox">
+  <span class="slider"></span>
+</label>
 </main>  
     <footer>
     <p>&copy;<span id="currentYear"></span>Jordan Chase Gilmore - jordan.c.gilmore@skiff.com</p>
@@ -69,6 +74,6 @@
     </footer>
 
     <script src="./scripts/getDates.js"></script>
-    
+    <script src="./scripts/darkmode.js"></script>
 </body>
 </html>
