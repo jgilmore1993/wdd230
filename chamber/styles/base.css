@@ -14,7 +14,7 @@ header{
   display: grid;
 
   margin:auto;
-  background-color: black;;
+  background-color: #002366;;
   color: rgb(255, 255, 255);
   padding: 2rem;
   align-items: center;
@@ -113,7 +113,7 @@ body {
   }
   footer {
     font-family: 'Courier New', monospace;
-    background-color: royalblue;
+    background-color: #002366;
     text-align: center;
     font-size: 20px;
   }
