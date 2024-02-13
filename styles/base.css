@@ -14,7 +14,7 @@ header{
     display:flex;
     margin:auto;
     background-color: royalblue;;
-    color: rgb(255, 255, 255);
+    color: maroon;
     padding: 2rem;
     align-items: center;
     gap: 2rem;
@@ -52,7 +52,7 @@ main > h2{
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: #eee;
+	background-color: maroon;
 	color: #000;
 }
  
@@ -102,11 +102,11 @@ body {
   }
  
   #lastModified{
-    color: maroon;
+    color: white;
     font-size: 75%;
   }
   footer p {
-    color: maroon;
+    color: white;
 }
 .herotag{
     position: absolute;
