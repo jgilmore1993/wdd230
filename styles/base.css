@@ -1,6 +1,5 @@
 header, main, nav, footer{
     margin:auto;
-    width: 500px;
 }
 * {
     box-sizing: border-box;
@@ -13,7 +12,6 @@ header, main, nav, footer{
 } */
 header{
     display:flex;
-    width:500px;
     margin:auto;
     background-color: royalblue;;
     color: rgb(255, 255, 255);
@@ -62,7 +60,6 @@ main > h2{
 	content: "☰";
 }
 nav {
-    max-width: 500px;
     padding: 1rem;
     text-align: center;
     background: rgb(69, 69, 69);
@@ -110,4 +107,15 @@ body {
   }
   footer p {
     color: white;
+}
+.herotag{
+    position: absolute;
+    z-index: 3;
+    color: indigo;
+    left: 25px;
+    top: 500px;
+    font-size: 40px;
+}
+.heroimage{
+    width: 100%;
 }
