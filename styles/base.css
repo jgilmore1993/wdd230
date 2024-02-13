@@ -102,11 +102,11 @@ body {
   }
  
   #lastModified{
-    color: white;
+    color: maroon;
     font-size: 75%;
   }
   footer p {
-    color: white;
+    color: maroon;
 }
 .herotag{
     position: absolute;
