@@ -14,7 +14,7 @@ header{
     display:flex;
     margin:auto;
     background-color: royalblue;;
-    color: maroon;
+    color: white;
     padding: 2rem;
     align-items: center;
     gap: 2rem;
@@ -62,7 +62,7 @@ main > h2{
 nav {
     padding: 1rem;
     text-align: center;
-    background: rgb(69, 69, 69);
+    background: #ffff11;
 }
 .navgation a {
 	display: block;
