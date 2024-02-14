@@ -28,9 +28,9 @@
   <header>
      <picture>
     <source media="(max-width:650px)" srcset="./images/wdd230-orgsmall_3_11zon.webp">
-    <source media="(max-width:1200px)" srcset="./images/wdd230-org_1_11zon.webp">
-    <source media="(max-width:1900px)" srcset="./images/wdd230-orglarge_2_11zon.webp">
-    <img src="./images/wdd230-org.png" alt="Team Meeting">
+    <source media="(max-width:2000px)" srcset="./images/wdd230-org_1_11zon.webp">
+    <source media="(max-width:4000px)" srcset="./images/wdd230-orglarge_2_11zon.webp">
+    <img src="./images/wdd230-org.jpg" alt="Team Meeting">
   </picture>
                 <!-- Rectangular switch -->
                 <label class="switch">
@@ -69,7 +69,9 @@
     </div>
     <div class="weather-card">
         <h2 class="weather-location">Idaho Falls, Idaho</h2>
-        <p>Tempurate is 45 degrees outside.</p>
+        <p>Tempurate is <span id="Tempurate"></span> degrees outside.</p>
+        <p>Wind Speed is <span id="windspeed"></span> mph.</p>
+        <p>windchill is <span id="windchill"></span> degrees.</p>
     </div>
 </main>  
     <footer>
