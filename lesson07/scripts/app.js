@@ -5,6 +5,7 @@ const list = document.querySelector('#list');
 let chaptersArray = getChapterList() || [];
 
 chaptersArray.forEach(chapter => {
+  var chapter = chapter.slice(0, chapter.length - 1);
     displayList(chapter);
   });
 
@@ -38,7 +39,7 @@ chaptersArray.forEach(chapter => {
   function getChapterList() {
     return JSON.parse(localStorage.getItem('myFavBOMList'));
   }
-  chapter = chapter.slice(0, chapter.length - 1); // this slices off the last character
+  
   chaptersArray = chaptersArray.filter((item) => item !== chapter);
   function deleteChapter(chapter) {
     chapter = chapter.slice(0, chapter.length - 1);

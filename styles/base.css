@@ -113,9 +113,10 @@ body {
     z-index: 3;
     color: violet;
     left: 25px;
-    top: 500px;
+    top: 600px;
     font-size: 40px;
 }
 .heroimage{
     width: 100%;
+    height: auto;
 }
