@@ -111,7 +111,7 @@ body {
 .herotag{
     position: absolute;
     z-index: 3;
-    color: violet;
+    color: darkviolet;
     left: 25px;
     top: 600px;
     font-size: 40px;
