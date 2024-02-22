@@ -63,4 +63,11 @@
     place-items: center;
   }
   .show{display: flex;}
+  .directory {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .centerbar img:hover {
+    width: 120%;
+  }
 }

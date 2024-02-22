@@ -27,7 +27,6 @@
 </head>
 <body>
     <header>
-        <img src="images/jordan-gilmore.jpg" alt="Profile Picture">
         <h1>Jordan Chase Gilmore</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -40,8 +39,9 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures" class="nav-link">Scripture</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="directory">
         <div class="sidebar">
+            <p id="lastvisit"></p>
             <p>Calendar</p>
             <img src="./images/1600w-IX-JKe8tBWg.webp" alt="2024 February Calendar">
             <p>Demographics</p>
@@ -49,24 +49,37 @@
             <p>Events</p>
             <img src="./images/rexburg_upcoming_events_j.f.2024.png" alt="Events happening in Rexburg, Idaho">
         </div>
-        <div>
-            <img src="./images/tetons_-_t.jpg" alt="Teton Mountains">
-            <img src="./images/Rexburg LDS Temple.jpg" alt="Rexburg LDS Temple">
-            <img src="./images/"
+        <div class="centerbar">
+            <p>Teton Mountains</p>
+            <img src="./images/tetons_-_t.jpg" height="200" width="200" alt="Teton Mountains" loading="lazy">
+            <p>Rexburg LDS Temple</p>
+            <img src="./images/Rexburg LDS Temple.jpg" height="200" width="200" alt="Rexburg LDS Temple" loading="lazy">
+            <p>BYU-Idaho Campus</p>
+            <img src="./images/download.jpg" height="200" width="200" alt="BYU-Idaho Campus" loading="lazy">
+            <p>Idaho Falls</p>
+            <img src="./images/2021-12-14.jpg" alt="Idaho Falls, Idaho" loading="lazy">
+            <p>Downtown</p>
+            <img src="./images/Downtown_Idaho_Falls.jpg" alt="Downtown Idaho Falls" loading="lazy">
+            <p>Russ Freeman Park</p>
+            <img src="./images/943283-1.jpg" alt="Russ Freeman Park" loading="lazy">
         </div>
     </main>
     <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93091.59762106223!2d-77.69897002440723!3d43.18615181057411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b3059614b353%3A0x5a001ffc4125e61e!2sRochester%2C%20NY!5e0!3m2!1sen!2sus!4v1705968699000!5m2!1sen!2sus" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23025.948092720897!2d-111.808825298337!3d43.830048592300635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1708629674368!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </div>
     
     <footer>
-        <p>&copy;<span id="currentYear"></span>Jordan Chase Gilmore - Rochester, New York</p>
+        <p>&copy;<span id="currentYear"></span>Jordan Chase Gilmore - Rexburg, Idaho</p>
         <p id="lastModified"></p>
     </footer>
     <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/lastvisit.js"></script>
 </body>
 </html>

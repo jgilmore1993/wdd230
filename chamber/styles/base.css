@@ -200,5 +200,17 @@ input:checked + .slider:before {
   color: white;
 }
 .sidebar img {
-  width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.directory {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.centerbar img {
+  width: 100%;
+  height: auto;
+  transition: all 2s;
 }
