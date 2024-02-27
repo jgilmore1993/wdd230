@@ -27,10 +27,7 @@
 </head>
 <body>
     <header>
-        <h1>Jordan Chase Gilmore</h1>
-    </header>
-    <a id="menu" href="#"></a>
-    <nav class="navigation">
+        <nav class="navigation">
         <ul class="nav-menu">
             <li><a href="#" class="nav-link">Home</a></li>
             <li><a href="chamber/" class="nav-link">Chamber</a></li>
@@ -39,35 +36,46 @@
             <li><a href="https://www.churchofjesuschrist.org/study/scriptures" class="nav-link">Scripture</a></li>
         </ul>
     </nav>
-        <label for="firstname">
-            <input id="firstname" type="checkbox" name="Jordan" />
-            Jordan
+    </header>
+    <a id="menu" href="#"></a>
+        <form method="get" action="./thankyou.html"> 
+            <label for="firstname">
+                firstname
+            <input id="firstname" type="text" name="firstname" />
+            </label>
+            <label for="lastname">
+                lastname
+            <input id="lastname" type="text" name="lastname" />
+            </label>
+            <label for="position">
+                position
+            <input id="position" type="text" name="position" />      
+            </label>
+            <label for="emailaddress">
+                emailaddress
+            <input id="emailaddress" type="email" name="emailaddress" />  
+            </label>
+            <label for="mobilephonenumber">
+                mobilephonenumber
+            <input id="mobilephonenumber" type="telephone" name="mobilephonenumber" />
+            </label>
+            <label for="businessname">
+                businessname
+            <input id="businessname" type="text" name="businessname" />
+            </label>
+            <label for="membershiplevel">
+                membershiplevel
+            <input id="membershiplevel" type="radio" name="membershiplevel" />
+            
         </label>
-        <label for="lastname">
-            <input id="lastname" type="checkbox" name="Gilmore" />
-            Gilmore
+        <label for="description">
+            <input id="description" type="text" name="description"/>
+            description
         </label>
-        <label for="position">
-            <input id="position" type="checkbox" name="Entrepreneur" />
-            Entrepreneur
+        <label for="date">
+            <input id="date" type="hidden" name="date"/>
         </label>
-        <label for="emailaddress">
-            <input id="emailaddress" type="checkbox" name="jordan.c.gilmore@skiff.com" />
-            jordan.c.gilmore@skiff.com
-        </label>
-        <label for="mobilephonenumber">
-            <input id="mobilephonenumber" type="checkbox" name="123-456-7890" />
-            123-456-7890
-        </label>
-        <label for="businessname">
-            <input id="businessname" type="checkbox" name="NexGenTech" />
-            NexGenTech
-            <p></p>
-        </label>
-        <label for="membershiplevel">
-            <input id="membershiplevel" type="checkbox" name="GoldMembership" />
-            Gold Membership
-        </label>
+        </form>
       <p>
         <a href="terms-and-conditions.html">Read our Terms and Conditions</a>
       </p>
