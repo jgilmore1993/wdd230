@@ -129,3 +129,14 @@ input:focus {
   input:invalid {
     border: 2px solid red;
   }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  form * {
+    margin: 10px;
+  }
+  .submit {
+    width: 100px;
+    font-size: 20px;
+  }
