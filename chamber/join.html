@@ -37,6 +37,7 @@
         </ul>
     </nav>
     </header>
+    <main>
     <a id="menu" href="#"></a>
         <form method="get" action="./thankyou.html"> 
             <label for="firstname">
@@ -128,9 +129,11 @@
         </div>
     </div>
         <label for="description">
-            <input id="description" type="text" name="description"/>
-            description
-        </label>
+            description:</label>
+            <textarea id="description" name="description" rows="4" cols="50">
+                Join us for the services we will provide.
+            </textarea>
+        
         <label for="date">
             <input id="date" type="hidden" name="date"/>
         </label>
@@ -139,12 +142,12 @@
       <p>
         <a href="terms-and-conditions.html">Read our Terms and Conditions</a>
       </p>
-    
+    </main>
     <footer>
         <p>&copy;<span id="currentYear"></span>Jordan Chase Gilmore - Rochester, New York</p>
         <p id="lastModified"></p>
     </footer>
     <script src="./scripts/getDates.js"></script>
-    <script src="./scripts/visits.js"></script>
+    <script src="./scripts/visit.js"></script>
 </body>
 </html>

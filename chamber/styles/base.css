@@ -40,10 +40,16 @@ ul{
 }
 main > h2{
   text-align:center;
+  
 }
 main {
   grid-template-columns: 1fr;
   gap: 10px;
+  background-color: rgb(69, 69, 69);
+  color: white;
+}
+main a {
+  color: white;
 }
 .card {
   border: 1px solid black;
