@@ -41,46 +41,92 @@
         <form method="get" action="./thankyou.html"> 
             <label for="firstname">
                 firstname
-            <input id="firstname" type="text" name="firstname" />
+            <input id="firstname" type="text" name="firstname" required/>
             </label>
             <label for="lastname">
                 lastname
-            <input id="lastname" type="text" name="lastname" />
+            <input id="lastname" type="text" name="lastname" required/>
             </label>
             <label for="position">
                 position
-            <input id="position" type="text" name="position" />      
+            <input id="position" type="text" name="position" required/>      
             </label>
             <label for="emailaddress">
                 emailaddress
-            <input id="emailaddress" type="email" name="emailaddress" />  
+            <input id="emailaddress" type="email" name="emailaddress" required placeholder="somebody@gmail.com"/>  
             </label>
             <label for="mobilephonenumber">
                 mobilephonenumber
-            <input id="mobilephonenumber" type="telephone" name="mobilephonenumber" />
+            <input id="mobilephonenumber" type="telephone" name="mobilephonenumber" required/>
             </label>
             <label for="businessname">
                 businessname
-            <input id="businessname" type="text" name="businessname" />
+            <input id="businessname" type="text" name="businessname" required/>
             </label>
-            
+        <div class="membershiplevel">
+            <div class="radio">
             <label for="npmembershiplevel">
                 Non-profit
-            <input id="npmembershiplevel" type="radio" name="membershiplevel" />
-            
+            <input id="npmembershiplevel" type="radio" name="membershiplevel"/>
+            </label>
             <label for="bronze">
                 Bronze
             <input id="bronze" type="radio" name="membershiplevel" />
-            
+            </label>
             <label for="silver">
                 Silver
             <input id="silver" type="radio" name="membershiplevel" />
-            
+            </label>
             <label for="gold">
                 Gold
             <input id="gold" type="radio" name="membershiplevel" />
-            
-        </label>
+            </label>
+        </div>
+        <div class="description">
+            <ul>
+                <h1>NP Membership</h1>
+                <li>Who It's For: Non-profit organizations seeking to join and benefit from our services without any financial burden.</li>
+                <li>Fee: No fee required.</li>
+                <li>Benefits:</li>
+                <li>Access to a network of like-minded organizations.</li>
+                <li>Free entry to webinars and workshops tailored for non-profit challenges.</li>
+                <li>Opportunities for partnerships and collaborations.</li>
+                <li>Limited access to resources and tools designed for non-profit success.</li>
+            </ul>
+            <ul>
+                <h1>Bronze Membership</h1>
+                <li>Who It's For: Individuals or small businesses starting their journey.</li>
+                <li>Fee: A modest annual fee that provides access to foundational resources.</li>
+                <li>Benefits:</li>
+                <li>Access to basic online courses and webinars.</li>
+                <li>Subscription to a monthly newsletter.</li>
+                <li>Network opportunities with other Bronze members.</li>
+                <li>Discounts on selected partner services.</li>
+            </ul>
+            <ul>
+                <h1>Silver Membership</h1>
+                <li>Who It's For: Established professionals or businesses looking to expand their network and knowledge.</li>
+                <li>Fee: A competitive annual fee for extended benefits and resources.</li>
+                <li>Benefits:</li>
+                <li>All Bronze benefits.</li>
+                <li>Access to advanced training sessions and exclusive webinars.</li>
+                <li>Priority booking for events and conferences.</li>
+                <li>Increased visibility within the member directory.</li>
+                <li>Access to a dedicated support team.</li>
+            </ul>
+            <ul>
+                <h1>Gold Membership</h1>
+                <li>Who It's For: Industry leaders and large corporations committed to excellence and innovation.</li>
+                <li>Fee: A premium annual fee for top-tier services and opportunities.</li>
+                <li>Benefits:</li>
+                <li>All Silver benefits.</li>
+                <li>Exclusive invites to round-table discussions and think tanks with industry leaders.</li>
+                <li>Opportunities for featured articles and promotions in newsletters and on the website.</li>
+                <li>First access to market research reports and case studies.</li>
+                <li>Personalized consulting sessions with experts in your field.</li>
+            </ul>
+        </div>
+    </div>
         <label for="description">
             <input id="description" type="text" name="description"/>
             description
@@ -88,7 +134,7 @@
         <label for="date">
             <input id="date" type="hidden" name="date"/>
         </label>
-        <button type="submit">Submit Form</button>
+        <button type="submit" class="submit">Submit Form</button>
         </form>
       <p>
         <a href="terms-and-conditions.html">Read our Terms and Conditions</a>

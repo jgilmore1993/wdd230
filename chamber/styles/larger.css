@@ -70,4 +70,26 @@
   .centerbar img:hover {
     width: 120%;
   }
+
+.submit {
+  width: 100px;
+  font-size: 20px;
+}
+.membershiplevel {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.radio {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.description * {
+  text-align: left;
+}
+
+.description {
+  display: block;
+}
 }
