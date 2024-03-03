@@ -13,7 +13,7 @@ header, main, nav, footer{
 header{
     display:flex;
     margin:auto;
-    background-color: royalblue;;
+    background-color: rgb(5, 40, 142);;
     color: white;
     padding: 2rem;
     align-items: center;
@@ -97,13 +97,13 @@ body {
   }
   footer {
     font-family: 'Courier New', monospace;
-    background-color: royalblue;
+    background-color: rgb(5, 40, 142);
     text-align: center;
   }
  
   #lastModified{
     color: white;
-    font-size: 75%;
+
   }
   footer p {
     color: white;
