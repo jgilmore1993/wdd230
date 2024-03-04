@@ -93,11 +93,11 @@ nav li{
 }
 
 .show{
-  display: none;
+  display: block;
 }
 
 .show li {
-display: none;
+display: block;
 }
 
 #menu.show::before {
