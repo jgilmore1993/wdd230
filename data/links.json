@@ -4,13 +4,70 @@
         "lesson": "02",
         "links": [
           {
-            "url":"lesson02/mediaquery.html",
-            "title":"Media Queries"
-          },
-          {
-            "url":"lesson02/design-principles.html",
-            "title":"Design Principles Document"
+            "url":"./lesson02/design-principles.html",
+            "title":"Week 02"
           }
         ]
       },
-    ...
+
+        {
+          "lesson": "03",
+          "links": [
+            {
+              "url":"./lesson03/chamber-site-plan.html",
+              "title":"Week 03"
+            }
+          ]
+      },
+
+      {
+        "lesson": "04",
+        "links": [
+          {
+            "url":"./chamber/index.html",
+            "title":"Week 04"
+          }
+        ]
+    },
+
+    {
+      "lesson": "05",
+      "links": [
+        {
+          "url":"./lesson05/bom.html",
+          "title":"Week 05"
+        }
+      ]
+  },
+
+  {
+    "lesson": "07",
+    "links": [
+      {
+        "url":"./lesson07/bom.html",
+        "title":"Week 07"
+      }
+    ]
+},
+
+{
+  "lesson": "08",
+  "links": [
+    {
+      "url":"./form.html",
+      "title":"Week 08"
+    }
+  ]
+},
+
+{
+  "lesson": "09",
+  "links": [
+    {
+      "url":"./lesson09/prophets.html",
+      "title":"Week 09"
+    }
+  ]
+}
+]
+}
