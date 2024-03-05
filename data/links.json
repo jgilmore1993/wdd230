@@ -5,7 +5,7 @@
         "links": [
           {
             "url":"./lesson02/design-principles.html",
-            "title":"Week 02"
+            "title":"design-principles"
           }
         ]
       },
@@ -15,7 +15,7 @@
           "links": [
             {
               "url":"./lesson03/chamber-site-plan.html",
-              "title":"Week 03"
+              "title":"chamber-site-plan"
             }
           ]
       },
@@ -25,7 +25,7 @@
         "links": [
           {
             "url":"./chamber/index.html",
-            "title":"Week 04"
+            "title":"chamber-index"
           }
         ]
     },
@@ -35,7 +35,7 @@
       "links": [
         {
           "url":"./lesson05/bom.html",
-          "title":"Week 05"
+          "title":"bom"
         }
       ]
   },
@@ -45,7 +45,7 @@
     "links": [
       {
         "url":"./lesson07/bom.html",
-        "title":"Week 07"
+        "title":"bom"
       }
     ]
 },
@@ -55,7 +55,7 @@
   "links": [
     {
       "url":"./form.html",
-      "title":"Week 08"
+      "title":"form"
     }
   ]
 },
@@ -65,7 +65,7 @@
   "links": [
     {
       "url":"./lesson09/prophets.html",
-      "title":"Week 09"
+      "title":"prophets"
     }
   ]
 }
