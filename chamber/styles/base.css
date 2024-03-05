@@ -64,7 +64,7 @@ font-weight:700;
 text-decoration: none;
 padding: .5rem .75rem;
 background-color: rgb(69, 69, 69);
-color: #000;
+color: white;
 }
 
 #menu::before {
