@@ -1,0 +1,67 @@
+{
+"companies": [
+    {
+        "name": "Tech Innovations Inc.",
+        "address": "123 Tech Avenue, Innovation City, IC 45678",
+        "phone_number": "123-456-7890",
+        "website_url": "https://techinnovations.com",
+        "image_icon_file_name": "tech_innovations_icon.png",
+        "membership_level": "Platinum",
+        "other_info": "Leading the way in technology advancements and community engagement."
+    },
+    {
+        "name": "Green Future Solutions",
+        "address": "456 Sustainability Drive, Green City, GC 12345",
+        "phone_number": "234-567-8901",
+        "website_url": "https://greenfuturesolutions.com",
+        "image_icon_file_name": "green_future_icon.png",
+        "membership_level": "Gold",
+        "other_info": "Dedicated to creating sustainable and environmentally friendly solutions."
+    },
+    {
+        "name": "Health & Wellness Co.",
+        "address": "789 Healthy Lane, Wellness Town, WT 67890",
+        "phone_number": "345-678-9012",
+        "website_url": "https://healthwellnessco.com",
+        "image_icon_file_name": "health_wellness_icon.png",
+        "membership_level": "Silver",
+        "other_info": "Promoting health and wellness through innovative products and services."
+    },
+    {
+        "name": "Creative Minds Agency",
+        "address": "101 Creative Road, Art City, AC 78901",
+        "phone_number": "456-789-0123",
+        "website_url": "https://creativemindsagency.com",
+        "image_icon_file_name": "creative_minds_icon.png",
+        "membership_level": "Bronze",
+        "other_info": "Empowering creativity and innovation in marketing and design."
+    },
+    {
+        "name": "Eco Travel Network",
+        "address": "202 Green Path, Eco City, EC 89012",
+        "phone_number": "567-890-1234",
+        "website_url": "https://ecotravelnetwork.com",
+        "image_icon_file_name": "eco_travel_icon.png",
+        "membership_level": "Silver",
+        "other_info": "Leading eco-friendly travel options for the conscious traveler."
+    },
+    {
+        "name": "Global Education Partners",
+        "address": "303 Learning Loop, Education City, ED 90123",
+        "phone_number": "678-901-2345",
+        "website_url": "https://globaleducationpartners.com",
+        "image_icon_file_name": "global_education_icon.png",
+        "membership_level": "Gold",
+        "other_info": "Connecting students and educators worldwide for a better future."
+    },
+    {
+        "name": "Future Finance Group",
+        "address": "404 Money Road, Finance City, FC 01234",
+        "phone_number": "789-012-3456",
+        "website_url": "https://futurefinancegroup.com",
+        "image_icon_file_name": "future_finance_icon.png",
+        "membership_level": "Platinum",
+        "other_info": "Innovating financial solutions for tomorrow's world."
+    }
+    ]
+}

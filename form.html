@@ -7,6 +7,9 @@
     <meta name="author" content="Jordan Chase Gilmore">
     <title>Form</title>
     <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
 </head>
 <body>
     <header>
@@ -33,8 +36,8 @@
             pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></label>
             
             <label for="r">Page Rating
-            <div id="rangevalue">1</div>
             <input type="range" id="r" name="r" min="1" max="10" value="1" step="1"></label>
+            <div id="rangevalue">1</div>
             
             <input type="submit" value="Click Here" class="submit">
         </form>
