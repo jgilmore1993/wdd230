@@ -1,3 +1,9 @@
+:root {
+  --blue: #1e90ff;
+  --red: #7e0000;
+  --black: #000000;
+}
+
 header, main, nav, footer{
     margin:auto;
 }
@@ -13,7 +19,7 @@ header, main, nav, footer{
 header{
     display:flex;
     margin:auto;
-    background-color: royalblue;;
+    background-color: var(--blue);;
     padding: 2rem;
     align-items: center;
     gap: 2rem;
@@ -40,7 +46,7 @@ main > h2{
     text-align:center;
 }
 .card {
-    border: 1px solid black;
+    border: 1px solid var(--black);
 }
 .card h3{
     text-align:center;
@@ -51,8 +57,8 @@ main > h2{
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-	background-color: maroon;
-	color: #000;
+	background-color: var(--red);
+	color: var(--red);
 }
  
 #menu::before {
@@ -96,7 +102,7 @@ body {
   }
   footer {
     font-family: 'Courier New', monospace;
-    background-color: royalblue;
+    background-color: var(--blue);
     text-align: center;
   }
  
@@ -110,7 +116,7 @@ body {
 .herotag{
     position: absolute;
     z-index: 3;
-    color: darkviolet;
+    color: var(--black);
     left: 25px;
     top: 600px;
     font-size: 40px;
@@ -123,11 +129,11 @@ input:focus {
     background-color: yellow;
   }
   input:valid {
-    background-color: skyblue;
+    background-color: var(--blue);
     border: 2px solid teal;
   }
   input:invalid {
-    border: 2px solid red;
+    border: 2px solid var(--red);
   }
   form {
     display: flex;

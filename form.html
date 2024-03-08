@@ -25,11 +25,11 @@
             
             <label for="pwd">Password:
             <input type="password" required id="pwd" name="pwd"
-            pattern=".{8,}" title="Eight or more characters"></label>
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[S@#\*\(\)]).{8,}$" title="Eight or more characters"></label>
 
             <label for="pwd2">Verify your password:
             <input type="password" required id="pwd2" name="pwd2"
-            pattern=".{8,}" title="repeated for confirmation"></label>
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[S@#\*\(\)]).{8,}$" title="repeated for confirmation"></label>
             
             <label for="email">Email:
             <input type="email" id="email" name="email"
