@@ -14,7 +14,7 @@
         "address": "456 Sustainability Drive, Green City, GC 12345",
         "phone_number": "234-567-8901",
         "website_url": "https://greenfuturesolutions.com",
-        "image_icon_file_name": "green_future_icon.png",
+        "image_icon_file_name": "https://greenfuturessolutions.com/wp-content/uploads/2023/06/Expert_placeholder-1.jpg",
         "membership_level": "Gold",
         "other_info": "Dedicated to creating sustainable and environmentally friendly solutions."
     },
@@ -23,7 +23,7 @@
         "address": "789 Healthy Lane, Wellness Town, WT 67890",
         "phone_number": "345-678-9012",
         "website_url": "https://healthwellnessco.com",
-        "image_icon_file_name": "health_wellness_icon.png",
+        "image_icon_file_name": "https://images.squarespace-cdn.com/content/v1/5f7bca3e34e9b508fb0d2937/1616450157301-YBE6GEC2GF87COY45RKD/THWC-Logo-Horizontal-V2.png?format=1500w",
         "membership_level": "Silver",
         "other_info": "Promoting health and wellness through innovative products and services."
     },
@@ -32,7 +32,7 @@
         "address": "101 Creative Road, Art City, AC 78901",
         "phone_number": "456-789-0123",
         "website_url": "https://creativemindsagency.com",
-        "image_icon_file_name": "creative_minds_icon.png",
+        "image_icon_file_name": "https://seeklogo.com/images/C/creative-minds-marketing-agency-logo-382C1D60B8-seeklogo.com.png",
         "membership_level": "Bronze",
         "other_info": "Empowering creativity and innovation in marketing and design."
     },
@@ -41,7 +41,7 @@
         "address": "202 Green Path, Eco City, EC 89012",
         "phone_number": "567-890-1234",
         "website_url": "https://ecotravelnetwork.com",
-        "image_icon_file_name": "eco_travel_icon.png",
+        "image_icon_file_name": "https://static.wixstatic.com/media/c75682_b9d177eb2943434491d9140e278b14fc~mv2.png/v1/fill/w_780,h_466,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/c75682_b9d177eb2943434491d9140e278b14fc~mv2.png",
         "membership_level": "Silver",
         "other_info": "Leading eco-friendly travel options for the conscious traveler."
     },
@@ -50,7 +50,7 @@
         "address": "303 Learning Loop, Education City, ED 90123",
         "phone_number": "678-901-2345",
         "website_url": "https://globaleducationpartners.com",
-        "image_icon_file_name": "global_education_icon.png",
+        "image_icon_file_name": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-1/273582512_453105043180537_6524328059520568644_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=oO1AWnmCaMEAX8f6A6I&_nc_ht=scontent-ord5-2.xx&oh=00_AfDX1gV-yNTckR3YDMv3g2KMeeO6s74Gj717gpiuRzpYXQ&oe=65F08091",
         "membership_level": "Gold",
         "other_info": "Connecting students and educators worldwide for a better future."
     },
@@ -59,7 +59,7 @@
         "address": "404 Money Road, Finance City, FC 01234",
         "phone_number": "789-012-3456",
         "website_url": "https://futurefinancegroup.com",
-        "image_icon_file_name": "future_finance_icon.png",
+        "image_icon_file_name": "https://irp.cdn-website.com/ca08202e/dms3rep/multi/FFG_Logo+%282%29.png",
         "membership_level": "Platinum",
         "other_info": "Innovating financial solutions for tomorrow's world."
     }
