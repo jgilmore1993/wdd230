@@ -241,10 +241,6 @@ form * {
   border: none;
 }
 
-.description {
-  display: none;
-}
-
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -296,4 +292,11 @@ form * {
 
 .list section:nth-child(even) {
 	background-color: indigo;
+}
+
+.login {
+  grid-template-columns: 1fr;
+}
+footer a {
+  color: white;
 }
