@@ -20,11 +20,11 @@ function displayweather(data){
 
         temperature.innerHTML = data.main.temp
     
-        icon.setAttribute('src', weather.imageurl);
-        icon.setAttribute('alt', `Portrait of ${weather.name} ${weather.lastname}`); // fill in the blank
+        icon.setAttribute('src', `https://openweathermap.org/img/w/${data.weather[0].icon}.png`);
+        icon.setAttribute('alt', `icon of ${data.weather[0].description} `); // fill in the blank
         icon.setAttribute('loading', 'lazy');
-        icon.setAttribute('width', '340');
-        icon.setAttribute('height', '440');
-        console.log(data.weather)[0][0]
-        condition.innerHTML = data.weather[0].desrciption
+        icon.setAttribute('width', '40');
+        icon.setAttribute('height', '40');
+        console.log(data.weather[0])
+        condition.innerHTML = data.weather[0].description
 }

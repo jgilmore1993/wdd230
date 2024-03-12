@@ -120,3 +120,18 @@ body {
     width: 100%;
     height: auto;
 }
+#weather{
+    display: flex;
+    width: 60%;
+    margin: 0% auto;
+    border: 3px solid black;
+    flex-direction: column;
+    align-items: center;
+}
+#weather img{
+    width: 70px;
+    height: auto;
+}
+#weather p{
+    font-size: 30px;
+}
