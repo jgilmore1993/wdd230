@@ -135,3 +135,6 @@ body {
 #weather p{
     font-size: 30px;
 }
+.gone{
+    display: none;
+}

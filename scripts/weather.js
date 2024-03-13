@@ -2,13 +2,17 @@ lat = 43.4666
 lon = -112.0341
 const apiKey = 'ad62857b9636992224b8ca8bd61b0725'; // Replace YOUR_API_KEY with your actual API key
 const city = 'Rochester, NY';
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+//const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
+const url = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
+https://api.openweathermap.org/data/3.0/onecall?lat=43.4666&lon=-112.0341&appid=ad62857b9636992224b8ca8bd61b0725&units=imperial
 async function getweatherData(url) {
+    console.log("today")
+    console.log(url)
     const response = await fetch(url);
     const data = await response.json();
     console.log(data)
-    displayweather(data)
+ //   displayweather(data)
   }
 
 getweatherData(url)
@@ -28,3 +32,16 @@ function displayweather(data){
         console.log(data.weather[0])
         condition.innerHTML = data.weather[0].description
 }
+
+
+let banner = document.getElementById("banner")
+let button = document.getElementById("bannerbutton")
+button.addEventListener("click", ()=>{
+  banner.classList.add("gone")
+})
+// Create a new Date object for the current date and time
+var today = new Date();
+
+// Call the getDay() method on the Date object
+var dayOfWeek = today.getDay();
+if(!dayOfWeek==1||!dayOfWeek==2||!dayOfWeek==3){banner.classList.add("gone")}
