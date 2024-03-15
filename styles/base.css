@@ -128,13 +128,16 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 #weather img{
     width: 70px;
     height: auto;
 }
+
 #weather p{
     font-size: 30px;
 }
+
 .gone{
     display: none;
 }
