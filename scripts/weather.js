@@ -47,7 +47,6 @@ var dayOfWeek = today.getDay();
 if(!dayOfWeek==1||!dayOfWeek==2||!dayOfWeek==3){
   banner.classList.add("gone")
 }
-
 // const apiURL = 'api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}';
 // fetch(apiURL)
 //     .then(response => response.json())
