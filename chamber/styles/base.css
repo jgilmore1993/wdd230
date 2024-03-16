@@ -300,3 +300,6 @@ form * {
 footer a {
   color: white;
 }
+.navigation.active {
+  display: block; /* shown when active */
+}
