@@ -1,5 +1,5 @@
-let lat = 43.4666
-let lon = -112.0341
+let lat = 43.4927
+let lon = 112.0408
 const apiKey = 'ad62857b9636992224b8ca8bd61b0725'; // Replace YOUR_API_KEY with your actual API key
 const city = 'Rochester, NY';
 //const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
@@ -49,8 +49,8 @@ function displayweather(data){
 };
 
 let banner = document.getElementById("banner")
-let button = document.getElementById("bannerbutton")
-button.addEventListener("click", ()=>{
+let bannerbutton = document.getElementById("bannerbutton")
+bannerbutton.addEventListener("click", ()=>{
   banner.classList.add("gone")
 })
 // Create a new Date object for the current date and time
