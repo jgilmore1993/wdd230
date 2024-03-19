@@ -8,7 +8,6 @@ const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${l
 
 async function getweatherData(url) {
 
-
      const response = await fetch(url);
      const data = await response.json();
 
@@ -17,34 +16,34 @@ async function getweatherData(url) {
 
 getweatherData(url)
 
-
 function displayweather(data){
-  let card = document.createElement("div")
+  
   let weather = document.getElementById("weather")
         for (let i=0; i<3; i++){
-
-      
+          console.log("start")
+        let card = document.createElement("div")
         let temperature = document.createElement("p")
         let icon = document.createElement("img")
         let condition = document.createElement("p")
 
         let forecast = document.createElement("p")
 
-        temperature.innerHTML = data.list[i].main.temp
+        temperature.innerHTML = `The temperature is: ${data.list[i].main.temp}`
         forecast.innerText = ""
         console.log("the data is")
         console.log(data.list[i])
-        icon.setAttribute('src', `https://openweathermap.org/img/w/${data.list[i].weather[i].icon}.png`);
-        icon.setAttribute('alt', `icon of ${data.list[i].weather[i].description} `); // fill in the blank
+        icon.setAttribute('src', `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`);
+        icon.setAttribute('alt', `icon of ${data.list[i].weather[0].description} `); // fill in the blank
         icon.setAttribute('loading', 'lazy');
         icon.setAttribute('width', '40');
         icon.setAttribute('height', '40');
 
-        condition.innerHTML = data.list[i].weather[i].description
+        condition.innerHTML = `The condition is: ${data.list[i].weather[0].description}`
         card.append(temperature)
         card.append(icon)
         card.append(condition)
         card.append(forecast)
+        console.log("finished")
         weather.append(card)
       }
 };
