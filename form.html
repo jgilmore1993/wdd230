@@ -6,17 +6,25 @@
     <meta name="description" content="Example of Form Page">
     <meta name="author" content="Jordan Chase Gilmore">
     <title>Form</title>
-    <link rel="stylesheet" href="./styles/form.css">
+    <!-- <link rel="stylesheet" href="./styles/form.css"> -->
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
 </head>
 <body>
     <header>
-    <nav class="navigation">
-
-    </nav>
+        <img src="images/jordan-gilmore.jpg" alt="Profile Picture">
+        <h1>Jordan Chase Gilmore</h1>
     </header>
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="chamber/" class="nav-link">Chamber</a></li>
+            <li><a href="lesson03/chamber-site-plan.html" class="nav-link">Site Plan</a></li>
+            <li><a href="https://www.byui.edu/" class="nav-link">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" class="nav-link">Scripture</a></li>
+        </ul>
+    </nav>
     <main>
         <form action="./record.html" method="get">
             <label for="Username">Username:
@@ -25,11 +33,11 @@
             
             <label for="pwd">Password:
             <input type="password" required id="pwd" name="pwd"
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[S@#\*\(\)]).{8,}$" title="Eight or more characters"></label>
+            pattern="[A-Za-z0-9]{8,}" title="Eight or more characters"></label>
 
             <label for="pwd2">Verify your password:
             <input type="password" required id="pwd2" name="pwd2"
-            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[S@#\*\(\)]).{8,}$" title="repeated for confirmation"></label>
+            pattern="[A-Za-z0-9]{8,}" title="repeated for confirmation"></label>
             
             <label for="email">Email:
             <input type="email" id="email" name="email"

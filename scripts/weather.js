@@ -19,23 +19,34 @@ getweatherData(url)
 
 
 function displayweather(data){
-        let temperature = document.getElementById("temperature")
-        let icon = document.getElementById("icon")
-        let condition = document.getElementById("condition")
+  let card = document.createElement("div")
+  let weather = document.getElementById("weather")
+        for (let i=0; i<3; i++){
 
-        let forecast = document.getElementById("forecast")
+      
+        let temperature = document.createElement("p")
+        let icon = document.createElement("img")
+        let condition = document.createElement("p")
 
-        temperature.innerHTML = data.list[0].main.temp
+        let forecast = document.createElement("p")
+
+        temperature.innerHTML = data.list[i].main.temp
         forecast.innerText = ""
         console.log("the data is")
- //       console.log(data.weather[0])
-        icon.setAttribute('src', `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`);
-        icon.setAttribute('alt', `icon of ${data.weather[0].description} `); // fill in the blank
+        console.log(data.list[i])
+        icon.setAttribute('src', `https://openweathermap.org/img/w/${data.list[i].weather[i].icon}.png`);
+        icon.setAttribute('alt', `icon of ${data.list[i].weather[i].description} `); // fill in the blank
         icon.setAttribute('loading', 'lazy');
         icon.setAttribute('width', '40');
         icon.setAttribute('height', '40');
 
-        condition.innerHTML = data.weather[0].description
+        condition.innerHTML = data.list[i].weather[i].description
+        card.append(temperature)
+        card.append(icon)
+        card.append(condition)
+        card.append(forecast)
+        weather.append(card)
+      }
 };
 
 let banner = document.getElementById("banner")
