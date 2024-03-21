@@ -3,7 +3,6 @@ let url = "https://raw.githubusercontent.com/jgilmore1993/wdd230/main/data/membe
 async function getMemberData(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.companies)
     displayMembers(data.companies)
 }
 

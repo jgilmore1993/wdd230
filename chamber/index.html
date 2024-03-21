@@ -26,7 +26,7 @@
 </head>
 <body>
   <header>
-     <picture>
+     <picture class="hero">
     <source media="(max-width:650px)" srcset="./images/wdd230-orgsmall_3_11zon.webp">
     <source media="(max-width:2000px)" srcset="./images/wdd230-org_1_11zon.webp">
     <source media="(max-width:4000px)" srcset="./images/wdd230-orglarge_2_11zon.webp">
@@ -42,12 +42,13 @@
     <div class="banner" id="banner"><p>Welcome to our meet and greet at 7:00 p.m. Wednesday</p><button id="bannerbutton">❌</button></div>
     <div class="nav-div">
       <button id="menu"></button>
-    <nav class="nav-menu">
-      <a href="#"></a>
-      <a href="./index.html">Home</a>
-      <a href="./discover.html">Discover</a>
-      <a href="./directory.html">Directory</a>
-      <a href="./join.html">Join</a>
+      <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./directory.html" class="nav-link">Directory</a></li>
+            <li><a href="./discover.html" class="nav-link">Discover</a></li>
+            <li><a href="./join.html" class="nav-link">Join</a></li>
+        </ul>
     </nav>
     </div>
   </header>
@@ -68,14 +69,18 @@
         <p>Visit the local aquarium!</p>
       </div>
     </div>
+    <div>
+    <div id="today">
+      <h2>Today's Weather</h2>
+    </div>
     <div class="weather-card">
       <div id="weather">
-        <h2>Weather App Chamber of Commerce</h2>
+        <h2>3 Day Forecast</h2>
     </div>
         <!-- <h2 class="weather-location">Idaho Falls, Idaho</h2>
         <p>Tempurate is <span id="Tempurate"></span> degrees outside.</p>
         <p>Wind Speed is <span id="windspeed"></span> mph.</p>
-        <p>windchill is <span id="windchill"></span> degrees.</p> -->
+        <p>windchill is <span id="windchill"></span> degrees.</p> --></div>
     </div>
 </main>  
     <footer>

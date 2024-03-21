@@ -94,4 +94,10 @@
 .login {
   grid-template-columns: 2fr 1fr;
 }
+
+.hero {
+  width: 50%;
+  margin: 0 auto;
+}
+
 }

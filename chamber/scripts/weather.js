@@ -18,9 +18,34 @@ getweatherData(url)
 
 function displayweather(data){
   
-  let weather = document.getElementById("weather")
-        for (let i=0; i<3; i++){
-          console.log("start")
+  let today = document.getElementById("today")
+
+  let card = document.createElement("div")
+        let temperature = document.createElement("p")
+        let icon = document.createElement("img")
+        let condition = document.createElement("p")
+
+        let forecast = document.createElement("p")
+
+        temperature.innerHTML = `The temperature is: ${data.list[0].main.temp}`
+        forecast.innerText = ""
+
+        icon.setAttribute('src', `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`);
+        icon.setAttribute('alt', `icon of ${data.list[0].weather[0].description} `); // fill in the blank
+        icon.setAttribute('loading', 'lazy');
+        icon.setAttribute('width', '40');
+        icon.setAttribute('height', '40');
+
+        condition.innerHTML = `The condition is: ${data.list[0].weather[0].description}`
+        card.append(temperature)
+        card.append(icon)
+        card.append(condition)
+        card.append(forecast)
+
+        today.append(card)
+
+        for (let i=1; i<4; i++){
+
         let card = document.createElement("div")
         let temperature = document.createElement("p")
         let icon = document.createElement("img")
@@ -30,8 +55,7 @@ function displayweather(data){
 
         temperature.innerHTML = `The temperature is: ${data.list[i].main.temp}`
         forecast.innerText = ""
-        console.log("the data is")
-        console.log(data.list[i])
+
         icon.setAttribute('src', `https://openweathermap.org/img/w/${data.list[i].weather[0].icon}.png`);
         icon.setAttribute('alt', `icon of ${data.list[i].weather[0].description} `); // fill in the blank
         icon.setAttribute('loading', 'lazy');
@@ -43,7 +67,7 @@ function displayweather(data){
         card.append(icon)
         card.append(condition)
         card.append(forecast)
-        console.log("finished")
+
         weather.append(card)
       }
 };
