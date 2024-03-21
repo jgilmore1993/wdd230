@@ -306,3 +306,7 @@ footer a {
 .gone{
   display: none;
 }
+.spotlight{
+  width: 40%;
+  height: auto;
+}
