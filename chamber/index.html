@@ -45,7 +45,7 @@
       <nav class="navigation">
         <ul class="nav-menu">
             <li><a href="./index.html" class="nav-link">Home</a></li>
-            <li><a href="./directory.html" class="nav-link">Directory</a></li>
+            <li><a href="./directory.html" class="nav-link" div id="cardholder" class="grid">Directory</a></li>
             <li><a href="./discover.html" class="nav-link">Discover</a></li>
             <li><a href="./join.html" class="nav-link">Join</a></li>
         </ul>
@@ -55,18 +55,25 @@
 <main>
     <div class="bg-white dark:bg-black">
       <h2>Current Events</h2>
-      <p>This week, a Martial Arts gym offering to teach Jeet Kune Do and Filipino Martial Arts was opened.<br><br></p>
-      <h3>Spring Festival</h3>
+      <p>This week, a Martial Arts gym offering to teach Jeet Kune Do and Inosanto Kali was opened.<br><br></p>
+      <h2>Jeet Kune Do</h2>
+      <p>Jeet Kune Do (JKD) was developed by the renowned martial artist Bruce Lee. It is not a traditional martial art but rather a philosophy and system that emphasizes simplicity, 
+        directness, and efficiency in combat.</p>
+        <img class="fight" src="./images/jeet-kune-do.png" alt="jeet"><br><br>
+      <h2>Inosanto Kali</h2>
+      <p>Inosanto Kali, developed by Guro Dan Inosanto, is distinct from other martial arts due to its unique combination of Filipino martial arts, Indonesian pencak silat, Western boxing, and various other influences.</p>
+        <img class="fight" src="./images/inosanto-kali.jpg" alt="kali"><br><br>
+      <h2>Spring Festival</h2>
       <p>Come join us thus May 15th for annual Spring Festival.</p>
     </div>
-    <div>
+    <container>
       <h2>Spotlight!</h2>
 
-        <img class="spotlight" src="./images/tech-innovations-inc.png">
+        <img class="spotlight" src="./images/tech-innovations-inc.png" alt="tech">
         <p>123 Tech Avenue, Innovation City, IC 45678<br>
           123-456-7890<br>
           https://techinnovations.com<br></p>
-        <img class="spotlight" src="./images/green-future-solutions.jpg">
+        <img class="spotlight" src="./images/green-future-solutions.jpg" alt="green">
         <p>456 Sustainability Drive, Green City, GC 12345<br>
           234-567-8901<br>
           https://greenfuturesolutions.com<br></p>
@@ -81,15 +88,15 @@
       <div>
         <p>Visit the local aquarium!</p>
       </div>
-    </div>
+    </container>
     <div>
     <div id="today">
       <h2>Today's Weather</h2>
     </div>
     <div class="weather-card">
-      <div id="weather">
+      <container id="weather">
         <h2>3 Day Forecast</h2>
-    </div>
+    </container>
         <!-- <h2 class="weather-location">Idaho Falls, Idaho</h2>
         <p>Tempurate is <span id="Tempurate"></span> degrees outside.</p>
         <p>Wind Speed is <span id="windspeed"></span> mph.</p>
