@@ -1,0 +1,12 @@
+@media (min-width: 768px){
+   main {
+    grid-template-columns: 2fr 1fr;
+} 
+.directory {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .centerbar img:hover {
+    width: 120%;
+  }
+}

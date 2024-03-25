@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sign up form for the chamber of commerce.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jordan Chase Gilmore">
+    <title>Join Page Form</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <!-- For Facebook -->
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Facebook" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="https://www.facebook.com/facebook/" />
+    <meta property="og:url" content="https://www.facebook.com/" />
+    <meta property="og:description" content="A social media site for those to socialize." />
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Twitter" />
+    <meta name="twitter:description" content="A socail media site to share information." />
+    <meta name="twitter:image" content="https://twitter.com/" />
+    <meta name="twitter:url" content="https://twitter.com/?lang=en" />
+</head>
+<body>
+    <header>
+                   <!-- Rectangular switch -->
+                   <label class="switch">
+                   <input id="darkmode" type="checkbox">
+                   <span class="slider"></span>
+                   </label>
+       <p>Come learn to start your own business!</p>
+       <h1>Idaho Falls Chamber of Commerce Site Plan</h1>
+       <div class="nav-div">
+         <button id="menu"></button>
+         <nav class="navigation">
+            <ul class="nav-menu">
+                <li><a href="./index.html" class="nav-link">Home</a></li>
+                <li><a href="./directory.html" class="nav-link">Directory</a></li>
+                <li><a href="./discover.html" class="nav-link">Discover</a></li>
+                <li><a href="./join.html" class="nav-link">Join</a></li>
+            </ul>
+        </nav>
+       </div>
+     </header>
+    <main class="login">
+        <form method="get" action="./thankyou.html"> 
+            <label for="firstname">
+                firstname
+            <input id="firstname" type="text" name="firstname" required/>
+            </label>
+            <label for="lastname">
+                lastname
+            <input id="lastname" type="text" name="lastname" required/>
+            </label>
+            <label for="position">
+                position
+            <input id="position" type="text" name="position" required pattern="[A-Za-z-\s]{7,}"/>      
+            </label>
+            <label for="emailaddress">
+                emailaddress
+            <input id="emailaddress" type="email" name="emailaddress" required placeholder="somebody@gmail.com"/>  
+            </label>
+            <label for="mobilephonenumber">
+                mobilephonenumber
+            <input id="mobilephonenumber" type="tel" name="mobilephonenumber" required/>
+            </label>
+            <label for="businessname">
+                businessname
+            <input id="businessname" type="text" name="businessname" required pattern="^[a-zA-Z\s-]{7,}$"/>
+            </label>
+        <div class="membershiplevel">
+            <div class="radio">
+            <label for="npmembershiplevel">
+                Non-profit
+            <input id="npmembershiplevel" type="radio" name="membershiplevel"/>
+            </label>
+            <label for="bronze">
+                Bronze
+            <input id="bronze" type="radio" name="membershiplevel" />
+            </label>
+            <label for="silver">
+                Silver
+            <input id="silver" type="radio" name="membershiplevel" />
+            </label>
+            <label for="gold">
+                Gold
+            <input id="gold" type="radio" name="membershiplevel" />
+            </label>
+        </div>
+        
+    </div>
+        <label for="description">
+            description:</label>
+            <textarea id="description" name="description" rows="4" cols="50">
+                Join us for the services we will provide.
+            </textarea>
+        
+            <input id="date" type="hidden" name="date"/>
+
+        <button type="submit" class="submit">Submit Form</button>
+        </form>
+        <div class="description">
+            
+            <h1>NP Membership</h1>
+            <ul>
+                <li>Who It's For: Non-profit organizations seeking to join and benefit from our services without any financial burden.</li>
+                <li>Fee: No fee required.</li>
+                <li>Benefits:</li>
+                <li>Access to a network of like-minded organizations.</li>
+                <li>Free entry to webinars and workshops tailored for non-profit challenges.</li>
+                <li>Opportunities for partnerships and collaborations.</li>
+                <li>Limited access to resources and tools designed for non-profit success.</li>
+            </ul>
+            
+            <h1>Bronze Membership</h1>
+            <ul>               
+                <li>Who It's For: Individuals or small businesses starting their journey.</li>
+                <li>Fee: A modest annual fee that provides access to foundational resources.</li>
+                <li>Benefits:</li>
+                <li>Access to basic online courses and webinars.</li>
+                <li>Subscription to a monthly newsletter.</li>
+                <li>Network opportunities with other Bronze members.</li>
+                <li>Discounts on selected partner services.</li>
+            </ul>
+            
+            <h1>Silver Membership</h1>
+            <ul>             
+                <li>Who It's For: Established professionals or businesses looking to expand their network and knowledge.</li>
+                <li>Fee: A competitive annual fee for extended benefits and resources.</li>
+                <li>Benefits:</li>
+                <li>All Bronze benefits.</li>
+                <li>Access to advanced training sessions and exclusive webinars.</li>
+                <li>Priority booking for events and conferences.</li>
+                <li>Increased visibility within the member directory.</li>
+                <li>Access to a dedicated support team.</li>
+            </ul>
+            
+            <h1>Gold Membership</h1>
+            <ul>              
+                <li>Who It's For: Industry leaders and large corporations committed to excellence and innovation.</li>
+                <li>Fee: A premium annual fee for top-tier services and opportunities.</li>
+                <li>Benefits:</li>
+                <li>All Silver benefits.</li>
+                <li>Exclusive invites to round-table discussions and think tanks with industry leaders.</li>
+                <li>Opportunities for featured articles and promotions in newsletters and on the website.</li>
+                <li>First access to market research reports and case studies.</li>
+                <li>Personalized consulting sessions with experts in your field.</li>
+            </ul>
+        </div>
+      
+    </main>
+    <footer>
+        <div class="footer-column">
+            <p>123-456-7890 - jordan.c.gilmore@skiff.com</p>
+        </div>
+        <div class="footer-column">
+        <p>&copy;<span id="currentYear"></span> Jordan Chase Gilmore - WDD 230 Project</p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/visit.js"></script>
+</body>
+</html>

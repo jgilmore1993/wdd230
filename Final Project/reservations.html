@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development / course assignment portal">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Jordan Chase Gilmore">
+    <title>Directory of Members - Idaho Falls Chamber of Commerce</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <!-- For Facebook -->
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="Chamber" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="https://www.facebook.com/facebook/" />
+    <meta property="og:url" content="https://www.facebook.com/" />
+    <meta property="og:description" content="A social media site for those to socialize." />
+    <!-- For Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Chamber" />
+    <meta name="twitter:description" content="A socail media site to share information." />
+    <meta name="twitter:image" content="https://twitter.com/" />
+    <meta name="twitter:url" content="https://twitter.com/?lang=en" />
+</head>
+<body>
+    <header>
+        <img class="hero" src="images/idaho-falls.png" alt="Profile Picture">
+        <h1>Directory Page</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul class="nav-menu">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./directory.html" class="nav-link">Directory</a></li>
+            <li><a href="./discover.html" class="nav-link">Discover</a></li>
+            <li><a href="./join.html" class="nav-link">Join</a></li>
+            
+        </ul>
+    </nav>
+
+        <button id="grid">⏹️Grid</button>
+		<button id="list">📄List</button>
+
+    <main>
+        <div id="cardholder" class="grid">
+            
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer-column">
+            <p>123-456-7890 - jordan.c.gilmore@skiff.com</p>
+        </div>
+        <div class="footer-column">
+        <p>&copy;<span id="currentYear"></span> Jordan Chase Gilmore - WDD 230 Project</p>
+        <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+    <script src="./scripts/directory.js"></script>
+</body>
+</html>
