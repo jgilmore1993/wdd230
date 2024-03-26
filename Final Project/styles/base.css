@@ -312,6 +312,9 @@ footer a {
 }
 .fight{
   width: 20%;
+  flex: 1 1 auto;
+  margin: 10px;
+  max-width: calc(50% - 20px);
 }
 .style{
   font-size: 20px;
