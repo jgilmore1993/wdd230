@@ -330,3 +330,10 @@ footer {
   min-width: 250px; /* Adjust based on your design needs */
   padding: 10px;
 }
+
+.island{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
