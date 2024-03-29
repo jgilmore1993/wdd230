@@ -35,13 +35,19 @@ const api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lo
 
 function displayCurrentWeather(data) {
     let logolink = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let description = document.createElement("h3")
+    let humidity = document.createElement("h3")
+    description.textContent = data.weather[0].description
     const weather = document.createElement("h2")
     const logo = document.createElement("img")
     weather.textContent = data.main.temp
     logo.setAttribute("src", logolink)
     logo.setAttribute("alt", "logo")
+    humidity.textContent = "humidity is: " + data.main.humidity + "%"
     document.querySelector(".weather-card").appendChild(logo)
     document.querySelector(".weather-card").appendChild(weather)
+    document.querySelector(".weather-card").appendChild(description)
+    document.querySelector(".weather-card").appendChild(humidity)
     // console.log("Hello")
     // const weatherWidget = document.getElementById('weather-card');
     // const currentWeatherHTML = `
@@ -63,6 +69,7 @@ function displayForecastWeather(data) {
         <img src="http://openweathermap.org/img/w/${data.weather[0].icon}.png" alt="Weather Icon" />
     `;
     weatherWidget.innerHTML += forecastHTML;
+
 }
 console.log("Hello")
 fetch(api).then(

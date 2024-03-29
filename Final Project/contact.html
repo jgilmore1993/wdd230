@@ -7,7 +7,7 @@
     <meta name="description" content="A sign up form for the chamber of commerce.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Jordan Chase Gilmore">
-    <title>Join Page Form</title>
+    <title>~Scoots~ Contact</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/larger.css">
@@ -32,20 +32,27 @@
                    <input id="darkmode" type="checkbox">
                    <span class="slider"></span>
                    </label>
-       <p>Come learn to start your own business!</p>
-       <h1>Idaho Falls Chamber of Commerce Site Plan</h1>
+       <!-- <p>Come learn to start your own business!</p> -->
+       <h1 class="island">~Scoots~</h1>
        <div class="nav-div">
          <button id="menu"></button>
          <nav class="navigation">
             <ul class="nav-menu">
-                <li><a href="./index.html" class="nav-link">Home</a></li>
-                <li><a href="./directory.html" class="nav-link">Directory</a></li>
-                <li><a href="./discover.html" class="nav-link">Discover</a></li>
-                <li><a href="./join.html" class="nav-link">Join</a></li>
+                <li class="style"><a href="./home.html" class="nav-link">Home</a></li>
+                <li class="style"><a href="./reservations.html" class="nav-link">Reservations</a></li>
+                <li class="style"><a href="./rentals.html" class="nav-link">Rentals</a></li>
+                <li class="style"><a href="./contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
        </div>
      </header>
+     <section id="map">
+        <h2>Find Us on the Map</h2>
+        <!-- Embed Google Map -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14604.316074322456!2d-86.9459821!3d20.5083279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1597245194091!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
     <main class="login">
         <form method="get" action="./thankyou.html"> 
             <label for="firstname">
@@ -56,10 +63,10 @@
                 lastname
             <input id="lastname" type="text" name="lastname" required/>
             </label>
-            <label for="position">
+            <!-- <label for="position">
                 position
             <input id="position" type="text" name="position" required pattern="[A-Za-z-\s]{7,}"/>      
-            </label>
+            </label> -->
             <label for="emailaddress">
                 emailaddress
             <input id="emailaddress" type="email" name="emailaddress" required placeholder="somebody@gmail.com"/>  
@@ -68,11 +75,11 @@
                 mobilephonenumber
             <input id="mobilephonenumber" type="tel" name="mobilephonenumber" required/>
             </label>
-            <label for="businessname">
+            <!-- <label for="businessname">
                 businessname
             <input id="businessname" type="text" name="businessname" required pattern="^[a-zA-Z\s-]{7,}$"/>
-            </label>
-        <div class="membershiplevel">
+            </label> -->
+        <!-- <div class="membershiplevel">
             <div class="radio">
             <label for="npmembershiplevel">
                 Non-profit
@@ -90,20 +97,20 @@
                 Gold
             <input id="gold" type="radio" name="membershiplevel" />
             </label>
-        </div>
+        </div> -->
         
     </div>
         <label for="description">
-            description:</label>
+            comment:</label>
             <textarea id="description" name="description" rows="4" cols="50">
-                Join us for the services we will provide.
+                Comment your thoughts here.
             </textarea>
         
             <input id="date" type="hidden" name="date"/>
 
         <button type="submit" class="submit">Submit Form</button>
         </form>
-        <div class="description">
+        <!-- <div class="description">
             
             <h1>NP Membership</h1>
             <ul>
@@ -150,7 +157,7 @@
                 <li>First access to market research reports and case studies.</li>
                 <li>Personalized consulting sessions with experts in your field.</li>
             </ul>
-        </div>
+        </div> -->
       
     </main>
     <footer>
@@ -161,6 +168,10 @@
         <p>&copy;<span id="currentYear"></span> Jordan Chase Gilmore - WDD 230 Project</p>
         <p id="lastModified"></p>
         </div>
+        <div class="social-media">
+            <a href="#scootsTwitter" target="_blank" title="Follow Scoots on Twitter">
+              <img src="./images/square-x-twitter.jpg" alt="Twitter Icon" style="width: 24px; height: 24px;"> @ScootsRental
+          </a>
     </footer>
     <script src="./scripts/getDates.js"></script>
     <script src="./scripts/visit.js"></script>
