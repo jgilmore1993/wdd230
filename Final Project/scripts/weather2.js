@@ -71,6 +71,7 @@ function displayForecastWeather(data) {
     weatherWidget.innerHTML += forecastHTML;
 
 }
+
 console.log("Hello")
 fetch(api).then(
     (Response)=>Response.json())
