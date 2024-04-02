@@ -12,34 +12,38 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchWeatherData();
 });
 
-function fetchWeatherData() {
-    // Fetch current weather
-    fetch(apiUrlCurrent)
-        .then(response => response.json())
-        .then(data => {
-            displayCurrentWeather(data);
-        })
-        .catch(error => console.error('Error fetching current weather:', error));
+// function fetchWeatherData() {
+//     // Fetch current weather
+//     fetch(apiUrlCurrent)
+//         .then(response => response.json())
+//         .then(data => {
+//             displayCurrentWeather(data);
+//         })
+//         .catch(error => console.error('Error fetching current weather:', error));
 
-    // Fetch weather forecast
-    fetch(apiUrlForecast)
-        .then(response => response.json())
-        .then(data => {
-            const today = new Date();
-            const tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000)); // Tomorrow's date
-            const forecastForTomorrow = data.list.filter(forecast => {
-                const forecastDate = new Date(forecast.dt_txt);
-                return (
-                    forecastDate.getDate() === tomorrow.getDate() &&
-                    forecastDate.getHours() === 15 // 3:00 PM
-                );
-            });
-            if (forecastForTomorrow.length > 0) {
-                displayForecastWeather(forecastForTomorrow[0]); // Display next day's 3:00 PM forecast
-            }
-        })
-        .catch(error => console.error('Error fetching weather forecast:', error));
-}
+//     // Fetch weather forecast
+//     fetch(apiUrlForecast)
+//         .then(response => response.json())
+//         .then(data => {
+//             const today = new Date();
+//             const tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000)); // Tomorrow's date
+//             const forecastForTomorrow = data.list.filter(forecast => {
+//                 const forecastDate = new Date(forecast.dt_txt);
+//                 return (
+//                     forecastDate.getDate() === tomorrow.getDate() &&
+//                     forecastDate.getHours() === 15 // 3:00 PM
+//                 );
+//             });
+//             if (forecastForTomorrow.length > 0) {
+//                 displayForecastWeather(forecastForTomorrow[0]); // Display next day's 3:00 PM forecast
+//             }
+//         })
+//         .catch(error => console.error('Error fetching weather forecast:', error));
+// }
+
+fetch(apiUrlCurrent).then((response) => response.json()).then((jsObject) => {displayCurrentWeather(jsObject);});
+
+fetch(apiUrlForecast).then((response) => response.json()).then((jsObject) => {displayForecastWeather(jsObject);});
 
 function displayCurrentWeather(data) {
     let logolink = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;

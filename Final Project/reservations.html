@@ -27,27 +27,106 @@
 </head>
 <body>
     <header>
-        <img class="hero" src="images/idaho-falls.png" alt="Profile Picture">
-        <h1>Directory Page</h1>
+        <img class="hero" src="images/cozumel.jpg" alt="Profile Picture">
+        <h1 class="island">~Scoots~ Reservations</h1>
     </header>
     <a id="menu" href="#"></a>
+    <div class="nav-div">
     <nav class="navigation">
         <ul class="nav-menu">
-            <li><a href="./index.html" class="nav-link">Home</a></li>
-            <li><a href="./directory.html" class="nav-link">Directory</a></li>
-            <li><a href="./discover.html" class="nav-link">Discover</a></li>
-            <li><a href="./join.html" class="nav-link">Join</a></li>
-            
+            <li class="style"><a href="./home.html" class="nav-link">Home</a></li>
+            <li class="style"><a href="./reservations.html" class="nav-link">Reservations</a></li>
+            <li class="style"><a href="./rentals.html" class="nav-link">Rentals</a></li>
+            <li class="style"><a href="./contact.html" class="nav-link">Contact</a></li>
         </ul>
     </nav>
-
-        <button id="grid">⏹️Grid</button>
-		<button id="list">📄List</button>
+    </div>
+        <!-- <button id="grid">⏹️Grid</button>
+		<button id="list">📄List</button> -->
 
     <main>
-        <div id="cardholder" class="grid">
+        <!-- <div id="cardholder" class="grid">
             
-        </div>
+        </div> -->
+        <section class="agreement">
+            <h2>Rental Agreement Information</h2>
+            <p>Please read the following rental agreement carefully before proceeding with your reservation:</p><br><br>
+    <ol>
+        <li>
+            <h3>Rental Period and Rates</h3>
+            <p>Rental rates are based on the selected rental period (hourly or daily). Rentals must be returned by the due date and time specified in the reservation. Late returns will be subject to additional fees.</p><br><br>
+        </li>
+        <li>
+            <h3>Rental Requirements</h3>
+            <p>All renters must be at least 18 years of age and possess a valid driver's license. Renters may be required to provide proof of insurance and a security deposit.</p><br><br>
+        </li>
+        <li>
+            <h3>Damage and Liability</h3>
+            <p>The renter is responsible for any damage to the rental vehicle during the rental period. Scoots is not liable for any personal injury or property damage resulting from the use of the rental vehicle.</p><br><br>
+        </li>
+        <li>
+            <h3>Cancellations and Refunds</h3>
+            <p>Reservations can be cancelled up to 24 hours before the scheduled rental period for a full refund. Cancellations within 24 hours of the rental period will be subject to a cancellation fee.</p><br><br>
+        </li>
+        <li>
+            <h3>Prohibited Activities</h3>
+            <p>Rental vehicles may not be used for illegal activities or off-road driving. Smoking and transporting pets are strictly prohibited in the rental vehicles.</p><br><br>
+        </li>
+    </ol>
+    <p>By submitting the reservation form, you agree to the terms and conditions outlined in this rental agreement.</p>
+          </section>
+          <form class="reservation-form">
+            <h2>Rental Reservation</h2>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="period">Rental Period:</label>
+                <select id="period" name="period">
+                    <option value="hourly">Hourly</option>
+                    <option value="daily">Daily</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rental-type">Rental Type:</label>
+                <select id="rental-type" name="rental-type">
+                    <option value="scooter">Scooter</option>
+                    <option value="motorcycle">Motorcycle</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="number">Number:</label>
+                <input type="number" id="number" name="number" min="1" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Home State/Country:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="cruise-line">Cruise Line (if applicable):</label>
+                <input type="text" id="cruise-line" name="cruise-line">
+            </div>
+            <div class="form-group">
+                <label for="comments">Special Accommodations/Comments:</label>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
     </main>
     
     <footer>
