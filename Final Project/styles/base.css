@@ -410,3 +410,24 @@ footer {
   max-width: 500px;
   text-align: center;
 }
+
+.address-column,
+.map-column {
+  text-align: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login label,
+.login input,
+.login textarea,
+.login button {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 10px 0;
+}
