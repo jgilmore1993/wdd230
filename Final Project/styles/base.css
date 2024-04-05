@@ -395,3 +395,18 @@ footer {
 .map-column {
   text-align: center;
 }
+
+.reservation-form .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reservation-form .form-group label,
+.reservation-form .form-group input,
+.reservation-form .form-group select,
+.reservation-form .form-group textarea {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
