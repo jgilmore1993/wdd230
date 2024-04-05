@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
     fetchWeatherData();
 });
 
-fetch(apiUrlCurrent).then((response) => response.json()).then((jsObject) => {displayCurrentWeather(jsObject);});
+// fetch(apiUrlCurrent).then((response) => response.json()).then((jsObject) => {displayCurrentWeather(jsObject);});
 
-fetch(apiUrlForecast).then((response) => response.json()).then((jsObject) => {displayForecastWeather(jsObject);});
+// fetch(apiUrlForecast).then((response) => response.json()).then((jsObject) => {displayForecastWeather(jsObject);});
 
 function fetchWeatherData() {
     // Fetch current weather data
@@ -60,13 +60,24 @@ function displayCurrentWeather(data) {
 }
 
 function displayForecastWeather(forecastData) {
-    const forecastContainer  = document.getElementById('weather-card');
+    // const forecastContainer  = document.getElementById('weather-card');
+    // const tomorrowForecast = forecastData.list.find(forecast => {
+    //     const forecastDate = new Date(forecast.dt * 1000);
+    //     const tomorrow = new Date();
+    //     tomorrow.setDate(tomorrow.getDate() + 1);
+    //     return forecastDate.getHours() === 15 && forecastDate.getDate() === tomorrow.getDate();
+    // });
+    const forecastContainer = document.querySelector('.weather-card'); // Ensure this matches your HTML
+    console.log(forecastContainer); // Should log the DOM element, not null
+
     const tomorrowForecast = forecastData.list.find(forecast => {
         const forecastDate = new Date(forecast.dt * 1000);
         const tomorrow = new Date();
         tomorrow.setDate(tomorrow.getDate() + 1);
         return forecastDate.getHours() === 15 && forecastDate.getDate() === tomorrow.getDate();
     });
+
+    console.log(tomorrowForecast);
 
     if (tomorrowForecast) {
     const forecastHTML = `
