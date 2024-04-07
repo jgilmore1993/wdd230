@@ -18,7 +18,7 @@ if(!window.localStorage.getItem("lastvisit")){
     lastvisit.innerHTML = "Welcome! Let us know if you have any questions."
 }
 else if (days < 1){
-    lastvisit.innerHTML = "Back so soon! Awesome!"
+    // lastvisit.innerHTML = "Back so soon! Awesome!"
 }
 else {
     lastday.innerHTML = `You last visited ${days} days ago.`
